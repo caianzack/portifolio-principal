@@ -1,0 +1,135 @@
+#about{
+    height: auto;
+    width: 100%;
+
+    background: var(--color-black);
+    display: flex;
+    color: var(--color-white);
+
+    font-family: var(--font-text);
+}
+
+.background-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+}
+
+.img-wrapper{
+    height: 100vh;
+    width: 100%;
+    
+    position: relative;
+}
+
+.img-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background:
+    linear-gradient(.25turn, transparent 30%, var(--color-black)),
+    linear-gradient(.5turn, transparent 30%, var(--color-black)),
+    linear-gradient(1turn, transparent 65%, var(--color-black));
+}
+
+.img-wrapper img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.about-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 3rem;
+
+    font-family: var(--font-text);
+    font-size: 18px;
+
+    gap: 20px;
+}
+.about-text h2 p{
+    display: inline-block;
+    font-weight: 700;
+}
+.about-text h2{
+    font-size: 30px;
+}
+.about-box h3{
+    font-size: 24px;
+    margin: 1.5rem;
+
+    font-weight: 500;
+}
+.about-box h4{
+    font-size: 20px;
+    margin: 1.5rem;
+
+    font-weight: 500;
+}
+.about-box h4 p{
+    display: inline;
+}
+
+.about-botao{
+    display: flex;
+
+    max-width: 190px;
+}
+
+.about-botao button{
+    display: inline-block;
+    padding: 12px;
+
+    width: 100%;
+    max-width: 170px;
+
+    margin-bottom: 3rem;
+    font-family: var(--font-text);
+    letter-spacing: .15rem;
+
+    border-radius: 12px;
+    cursor: pointer;
+}
+.about-botao button a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 700;
+}
+.about-botao button:hover{
+    transition: all .3s ease;
+    filter: brightness(.8);
+}
+
+@media (max-width: 1024px) {
+    .about-box {
+        font-size: 1rem;
+        padding: 1rem;
+        padding-right: 3rem;
+    }
+    .about-text h2 p{
+        font-size: 1.5rem;
+    }
+    .about-box h3 {
+        font-size: calc(.8vw + .8rem);
+        margin: 2rem 1rem;
+    }
+  
+    .about-box h4 {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+  
+}

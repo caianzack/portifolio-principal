@@ -1,0 +1,64 @@
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 15px 30px;
+    position: fixed;
+
+    background: 'transparent';
+    z-index: 2;
+}
+
+.cabecalho-title{
+    text-decoration: none;
+}
+
+.cabecalho-title h1{
+    color: var(--color-white);
+    font-size: 2rem;
+    transition: opacity .3 ease;
+}
+
+.cabecalho-title h1:hover{
+    opacity: .8;
+}
+
+.navbar{
+    max-width: 350px;
+    width: 100%;
+
+
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar ul li a:hover{
+    opacity: .8;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+}
